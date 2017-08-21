@@ -1,4 +1,6 @@
 from spy_details import spy
+from start_chat import start_chat
+
 print "Let\'s get started"
 
 existing = raw_input("Do you want to continue as " + spy['salutation'] + " " + spy['name'] + " (Y/N): ")
