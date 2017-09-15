@@ -23,9 +23,9 @@ def start_chat(name, age, rating, status):
                           "Rating: " + str(rating) + "\n" \
                           "Glad to have you on Board" + "\n"
         if rating > 4.0:
-            welcome_message=welcome_message+"You are awesome"
+            welcome_message=welcome_message+"You are the Best"
         elif rating > 3.0:
-            welcome_message=welcome_message+"Going Good"
+            welcome_message=welcome_message+"Going Good but can improve further"
         else:
             welcome_message=welcome_message+"Need Lots of Efforts"
         print colored(welcome_message, 'green')
