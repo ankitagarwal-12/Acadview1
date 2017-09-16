@@ -2,6 +2,7 @@ from select_friend import select_friend
 from globals import friends
 from steganography.steganography import Steganography
 from termcolor import colored
+
 def read_chat():
     #function logic
     friend_choice = select_friend()
