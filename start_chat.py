@@ -48,11 +48,11 @@ def start_chat(name, age, rating, status):
         if result == 1:
             # action
             current_status_message = add_status()
-            print colored("Your Current status is: "+current_status_message,'green')
+            print colored("Your Current status is: "+current_status_message, 'green')
         elif result == 2:
             # action
             no_of_friends = add_friend()
-            print colored("You have %d friends " % (no_of_friends),'green')
+            print colored("You have %d friends " % (no_of_friends), 'green')
         elif(result ==3):
             send_message()
         elif(result ==4):

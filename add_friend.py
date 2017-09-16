@@ -18,7 +18,7 @@ def add_friend():
         if (re.match(patternsalutation, salutation) != None):
             tempcheck = False
         else:
-            print colored("Enter Again!!!!",'red')
+            print colored("Enter Again!",'red')
     tempcheck=True
     while tempcheck:
         new_friend.Name=raw_input("Enter Name: ")

@@ -9,10 +9,10 @@ def send_message():
     friend_choice = select_friend()
     #checking If Friend's List Is not Empty
     if friend_choice!=-1:
-        pattern='^[A-Za-z][0-9A-Za-z\s]*\.jpg$'#Regex for correct name pattern for image
+        pattern='^[A-Za-z][0-9A-Za-z\s]*\.jpg$'        # Regex for correct name pattern for image
         patternsave='^SOS|SAVE ME|IN DANGER|HELP$'
-        a=True#Temporary Variable
-        #prepare the  message
+        a=True                              # Temporary Variable
+        # prepare the  message
         while a:
             original_image = raw_input("Provide the name of the image to hide the message: ")
             if(re.match(pattern,original_image)!=None):
@@ -31,10 +31,10 @@ def send_message():
             print colored("You are no more a Spy!!!!",'red')
             friends.remove(friends[friend_choice])
         else:
-            #Handling Exception If Image Does Not Exist
+            # Handling Exception If Image Does Not Exist
             try:
                 # Encrypt the message
-                Steganography.encode(original_image,output_image,text)
+                Steganography.encode(original_image, output_image, text)
                 chatobject=Chat(output_image,datetime.now())
                 friends[friend_choice].chat.append(chatobject)
                 #Successful message
