@@ -1,5 +1,6 @@
 from select_friend import select_friend
 from steganography.steganography import Steganography
+<<<<<<< HEAD
 from globals import friends, Chat
 from termcolor import colored
 from datetime import datetime
@@ -46,3 +47,20 @@ def send_message():
                 print colored("Image %s Does Not Exist!!!!" %(original_image),'red')
     else:
         print colored("Empty Friend's List!!!!",'red')
+=======
+
+
+def send_message():
+    # choose a friend from the list.
+    friend_choice = select_friend()
+
+    # prepare the message
+    original_image = raw_input("Provide the name of the image to hide the message : ")
+    output_image = raw_input("Provide the name of the output image  : ")
+    text = raw_input("Enter your message here : ")
+    # Encrypt the message
+    Steganography.encode(original_image, output_image, text)
+
+    # Successful message
+    print "Your message encrypted successfully."
+>>>>>>> b1d7c28834c2a45816b8c25815d734dfcaef3f39

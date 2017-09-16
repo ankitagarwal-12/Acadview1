@@ -1,4 +1,5 @@
 from globals import friends
+<<<<<<< HEAD
 from termcolor import colored
 def select_friend():
     counter = 1
@@ -21,3 +22,15 @@ def select_friend():
     else:
         return -1
     return result - 1
+=======
+
+
+def select_friend():
+    counter = 1
+    for friend in friends:
+        print str(counter) + ". " + friend['name'] + "Age : " + str(friend['age'])
+        counter = counter + 1
+
+    result = int(raw_input("Select from the list : "))
+    return result - 1
+>>>>>>> b1d7c28834c2a45816b8c25815d734dfcaef3f39

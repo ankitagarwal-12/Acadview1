@@ -1,11 +1,15 @@
 # global variables and constants here.
+<<<<<<< HEAD
 from termcolor import colored
 from steganography.steganography import Steganography
+=======
+>>>>>>> b1d7c28834c2a45816b8c25815d734dfcaef3f39
 
 # current status message is initialized to None.
 current_status_message = None
 
 # list to store status messages.
+<<<<<<< HEAD
 STATUS_MESSAGES = ['My name is Bond, James Bond', 'Shaken, not stirred.']
 
 # lists to store users friends information.
@@ -44,3 +48,9 @@ class Chat:
 
     def displayMessage(self):
         print colored(self.Timestamp, 'blue'), "\nMessage: ", self.Message, "\n"
+=======
+STATUS_MESSAGES = ['My name is Bond, James Bond', 'Shaken, not stirred.', 'Keeping the British end up, Sir']
+
+# lists to store users friends information.
+friends = []
+>>>>>>> b1d7c28834c2a45816b8c25815d734dfcaef3f39
