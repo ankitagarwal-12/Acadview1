@@ -8,8 +8,7 @@ print "Let's get started!!!"
 flag=True
 #flag variable to terminate the program when user wants
 while flag:
-    question = "Do you want to continue as " + spy.Name + "(Y/N) ? "
-    existing = raw_input(question)
+    existing = raw_input("Do you want to continue as " + spy.Name + "(Y/N) ? ")
 
     # validating users input
     if existing.upper() == "Y":
